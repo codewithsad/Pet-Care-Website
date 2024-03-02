@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--WebSite Title-->
+  <title>Pet Care Website</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- CSS File-->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- OwlCarouse CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!-- OwlCarouse JS CDN-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+</head>
+
+<body>
+
+  <!-- Header Section Start -->
+
+  <header>
+    <div class="container ">
+      <div class="navbar flex1">
+        <nav class="flex1">
+          <ul id="menuitem">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#offer">FEATURED</a></li>
+            <li><a href="#shop">SHOP</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+
+          <span class="fa fa-bars" onclick="menutoggle()"></span>
+
+          <div class="logo flex">
+            <img src="image/dog--v4.png" />
+            <h1>Petiza</h1>
+          </div>
+        </nav>
+
+        <div class="account flex">
+          <i class="fa fa-search"></i>
+          <i class="fa fa-user"></i>
+          <i class="fa fa-heart"></i>
+          <i class="fa fa-shopping-bag"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Home Section Start -->
+
+  <section class="home" id="home">
+    <div class="container flex">
+      <div class="box_left">
+        <div class="left">
+          <h5>Hello Cat Lovers</h5>
+          <h1>Buy Pet Best Food & Produts</h1>
+          <span>25% Off</span> <br>
+          <button>Shop now</button>
+        </div>
+        <div class="right">
+          <img src="image/home-banner1.jpg" alt="">
+        </div>
+      </div>
+      <div class="box_right">
+        <div class="img">
+          <img src="image/home-banner2.jpg" alt="">
+        </div>
+        <div class="img">
+          <img src="image/home-banner3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offer Section Start -->
+
+  <section class="offer top" id="offer">
+    <div class="container flex">
+      <div class="left">
+        <div class="text">
+          <h1>Cat Product</h1>
+          <h5>DAILY ESSENTIALS</h5>
+          <a href="#">Explore all</a>
+        </div>
+        <div class="img">
+          <img src="image/offers1.jpg" alt="">
+        </div>
+      </div>
+      <div class="right">
+        <div class="text">
+          <h1>New Product</h1>
+          <h5>DAILY ESSENTIALS</h5>
+          <a href="#">Explore all</a>
+        </div>
+        <div class="img">
+          <img src="image/offers2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Product Section Start -->
+
+  <section class="product mtop" id="shop">
+    <div class="container">
+      <h2>New Product</h2>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/product1.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="fa fa-search"></i>
+              <i class="far fa-user"></i>
+              <i class="fa fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Chicken Soup</h4>
+            <h4> <span>$27.00</span> $15.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/product2.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="fa fa-search"></i>
+              <i class="fa fa-user"></i>
+              <i class="fa fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Meow Mix</h4>
+            <h4> <span>$56.00</span> $35.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/product3.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="fa fa-search"></i>
+              <i class="fa fa-user"></i>
+              <i class="fa fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Rocco Food Bowl</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/product4.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="fa fa-search"></i>
+              <i class="fa fa-user"></i>
+              <i class="fa fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Natural Food</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/product5.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="fa fa-search"></i>
+              <i class="fa fa-user"></i>
+              <i class="fa fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Pedigree 1.5 KG</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/product6.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="fa fa-search"></i>
+              <i class="fa fa-user"></i>
+              <i class="fa fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Zene For Dog</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/product7.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="fa fa-search"></i>
+              <i class="fa fa-user"></i>
+              <i class="fa fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Dogsee Chew</h4>
+            <h4> <span>$26.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/product8.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="fa fa-search"></i>
+              <i class="fa fa-user"></i>
+              <i class="fa fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Pedigree Puppy 1.5 KG</h4>
+            <h4> <span>$126.00</span> $95.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/product9.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="fa fa-search"></i>
+              <i class="fa fa-user"></i>
+              <i class="fa fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Zenith Grain Free</h4>
+            <h4> <span>$52.00</span> $25.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/product10.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="fa fa-search"></i>
+              <i class="fa fa-user"></i>
+              <i class="fa fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Pizaa Classic</h4>
+            <h4> <span>$36.00</span> $22.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/product11.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="fa fa-search"></i>
+              <i class="fa fa-user"></i>
+              <i class="fa fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Pet Whisper</h4>
+            <h4> <span>$26.00</span> $15.00</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="img">
+              <img src="image/product12.jpg" alt="">
+            </div>
+            <div class="overlay">
+              <i class="fa fa-search"></i>
+              <i class="fa fa-user"></i>
+              <i class="fa fa-shopping-bag"></i>
+            </div>
+          </div>
+          <div class="text">
+            <h4>Ganador Premium</h4>
+            <h4> <span>$89.00</span> $78.00</h4>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sale Disscount Section Start -->
+
+  <section class="sale top">
+    <div class="container flex1">
+      <div class="left">
+        <div class="img">
+          <img src="image/sales1.jpg" alt="">
+        </div>
+      </div>
+      <div class="right">
+        <div class="img">
+          <img src="image/sales2.jpg" alt="">
+        </div>
+        <div class="text">
+          <h2>SALE 20%</h2>
+        </div>
+        <div class="info">
+          <h1>Collection New</h1>
+          <h5>JUST FOR YOU PET</h5>
+          <a href="#">CAT COLLECTION</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blogs Section Start -->
+
+  <section class="blog mtop" id="blog">
+    <div class="container">
+      <h1>Our blogs</h1>
+      <div class="content grid">
+        <div class="box">
+          <div class="img">
+            <img src="image/blog3.jpg" alt="">
+          </div>
+          <div class="text flex">
+            <div class="date">
+              <h4>17 <br>
+                <span class="btop"></span> JUNE
+              </h4>
+            </div>
+            <div class="info">
+              <h5>NEWS</h5>
+              <h3>Which Bed Good For Cat</h3>
+              <p>Blanditiis facilis optio aut maiores, accusantium deleniti doloremque temporibus velit, corporis porro.</p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/blog2.jpg" alt="">
+          </div>
+          <div class="text flex">
+            <div class="date">
+              <h4>23 <br>
+                <span class="btop"></span> JUNE
+              </h4>
+            </div>
+            <div class="info">
+              <h5>NEWS</h5>
+              <h3>How to Care Dog</h3>
+              <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/blog1.jpg" alt="">
+          </div>
+          <div class="text flex">
+            <div class="date">
+              <h4>13 <br>
+                <span class="btop"></span> JULY
+              </h4>
+            </div>
+            <div class="info">
+              <h5>NEWS</h5>
+              <h3>Walking with Pets</h3>
+              <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Footer Section Start -->
+  <footer>
+    <div class="container top">
+      <div class="head flex1">
+        <span>Petiza Online Store</span>
+        <ul class="footer-menu">
+          <li>ABOUT US </li>
+          <li>CONTACT US </li>
+          <li>FAQS </li>
+        </ul>
+
+
+        <ul class="social-icon">
+          <li> <i class="fab fa-facebook-f"></i> </li>
+          <li> <i class="fab fa-instagram"></i> </li>
+          <li> <i class="fab fa-twitter"></i> </li>
+          <li> <i class="fab fa-youtube"></i> </li>
+        </ul>
+      </div>
+
+      <div class="text">
+        <h3>LIKE BEING FIRST?</h3>
+        <p>Then get your can't-miss style news, before everybody else</p>
+      </div>
+      <div class="input flex1">
+        <input type="text" placeholder="Enter your email">
+        <button>SUBSCRIBE</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer Bottom Legal Section Start -->
+
+  <div class="legal">
+    <p>Copyright (c) 2023. All Rights Reserved. <br> Design By : Irfan Khan</p>
+  </div>
+
+  <!-- Header Section Script -->
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+
+</body>
+</html>
